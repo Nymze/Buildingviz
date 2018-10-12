@@ -1,0 +1,45 @@
+
+<div class="vr-overlay-content" id="TopTitle">
+
+	<div class="btnsBt" id="btnsLeft">
+		
+
+		<h1>Feature1</h1>
+
+		
+		<button onclick="myToggleOn()" id="show">show</button>
+
+	</div>
+</div>
+
+<a-scene>
+
+	
+
+			<a-image src="assets/labelone.png" scale="20 10 10" position="10 45 -25" 
+			id="MyLabel" visible="false"></a-image>
+
+      <a-entity position="0 60 40">
+  			<a-camera></a-camera>
+			</a-entity>
+
+			
+
+       <a-gltf-model class="building" src="assets/scene.gltf" position='0 0 0' scale="1 1 1" rotation="0 90 0"></a-gltf-model>
+
+      
+
+</a-scene>
+
+ <script>
+
+
+function myToggleOn() {
+
+    var x = document.querySelector("#MyLabel");
+   	x.setAttribute("visible", true);
+			
+ }
+
+</script>
+
